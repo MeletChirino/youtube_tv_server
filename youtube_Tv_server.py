@@ -1,18 +1,3 @@
-'''
-para instalar selenium hay que usar pip
-sudo apt update
-sudo apt install python-pip
-sudo pip install selenium
-Luego
-hay que instalar el chromedriver desde la pag
-https://launchpad.net/ubuntu/trusty/+package/chromium-chromedriver
-hay escoge el que mas se ajuste a tu arquitectura
-probablemente debas instalar el paquete de chromium-browser
-sudo apt-get install chromium-browser
-finalmente actualiza todo para que se instale la version correcta del chromium-chromedriver
-sudo apt update && sudo apt upgrade
-'''
-
 import time
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
