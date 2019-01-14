@@ -45,15 +45,15 @@ link = 'https://www.youtube.com/tv#'
 #driver.get(link)
 # este le da click en skip
 xpath = '//*[@id="overlay-stage"]/div[2]/div[2]/div[2]/div[2]'
-check_url(driver, link, 5, xpath)
-time.sleep(1)
+check_url(driver, link, 3, xpath)
+time.sleep(1)# estos sleep dejan pasar un momento para que la pagina se "estabilice" y no salgan errores
 driver.find_element_by_xpath('//*[@id="overlay-stage"]/div[2]/div[2]/div[2]/div[2]/div[1]').click()
 time.sleep(1)
 #aqui hace click en settings
 driver.find_element_by_xpath('//*[@id="guide-list"]/div/div[7]/div/div[1]/div').click()
 time.sleep(1)
 driver.find_element_by_xpath('//*[@id="surface"]/div[2]/div/div[3]/div[3]/div/div[7]/div').click()
-time.sleep(5)
+time.sleep(3)
 #aqui hace click en conectar por codigo
 #driver.find_element_by_xpath('//*[@id="guide-list"]/div/div[7]/div/div[1]/div').click()
 # aqui saca el codigo
